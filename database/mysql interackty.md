@@ -42,7 +42,7 @@ UPDATE `Fjeltickets`.`Brukere` SET `Perms` = 2 WHERE `idBrukere` = 1;
 **Update `Tickets`:**
 ```sql
 UPDATE `Fjeltickets`.`Tickets` SET `Status` = 1 WHERE `TicketID` = 1;
-```
+```[text](../../../../../../xampp/htdocs/php/admin) [text](../../../../../../xampp/htdocs/php/db_connect.php) [text](../../../../../../xampp/htdocs/php/index.php) [text](../../../../../../xampp/htdocs/php/login.php) [text](../../../../../../xampp/htdocs/php/logout.php) [text](../../../../../../xampp/htdocs/php/register_process.php) [text](../../../../../../xampp/htdocs/php/register.php) [text](../../../../../../xampp/htdocs/php/style.css) [text](../../../../../../xampp/htdocs/php/tickets-post.php) [text](../../../../../../xampp/htdocs/php/tickets.php)
 
 ### 4. Deleting Data
 
