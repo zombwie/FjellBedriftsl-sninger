@@ -21,6 +21,7 @@ if ((!isset($_SESSION['id'])) || (!isset($_SESSION['username']))) {
                 <input type="text" name="Title" placeholder="Tittle"><br />
                 <label>text: </label>
                 <input type="text" name="Text" placeholder="Text"><br />
+                <input type="color" name="Farge" placeholder="Farge"><br />
                 <button type="submit">Submit</button><br />
             </form>
         </div>

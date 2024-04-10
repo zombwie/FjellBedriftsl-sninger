@@ -4,7 +4,7 @@ include "db_connect.php";
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||
 //|||||| Henter og validerer data fra index.php ||||||||
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||
-if (isset($_POST['Title']) && isset($_POST['Text'])) {
+if (isset($_POST['Title']) && isset($_POST['Text']) && isset($_POST['Farge']) {
 
     function validate($data)
     {
@@ -17,6 +17,7 @@ if (isset($_POST['Title']) && isset($_POST['Text'])) {
 
     $Title = validate($_POST['Title']);
     $Text = validate($_POST['Text']);
+    $Farge = validate($_POST['Farge']);
 
     if (empty($Title)) {
         header("Location: index.php?error=Title is required!");
@@ -30,7 +31,7 @@ if (isset($_POST['Title']) && isset($_POST['Text'])) {
 //|||||| Sjekker login detaljer med databasen ||||||||
 //||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-    $sql = "Insert into Tickets (Title, Inhold, UserID) VALUES ('$Title', '$Text', '".$_SESSION['id']."')";
+    $sql = "Insert into Tickets (Title, Inhold, UserID, Farge) VALUES ('$Title', '$Text', '".$_SESSION['id']."', '$Farge')";
 
     $result = mysqli_query($conn, $sql);
 
