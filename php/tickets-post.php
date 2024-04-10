@@ -4,7 +4,7 @@ include "db_connect.php";
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||
 //|||||| Henter og validerer data fra index.php ||||||||
 //||||||||||||||||||||||||||||||||||||||||||||||||||||||
-if (isset($_POST['Title']) && isset($_POST['Text']) && isset($_POST['Farge']) {
+if (isset($_POST['Title']) && isset($_POST['Text']) && isset($_POST['Farge'])) {
 
     function validate($data)
     {
